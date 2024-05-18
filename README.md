@@ -1,5 +1,4 @@
-## Drowsiness Detection for Drivers
-
+# Drowsiness Detection for Drivers
 This Python project detects whether drivers are yawning or falling asleep by monitoring their eye and mouth movements. The project uses the dlib library to detect and track facial features. If the driver appears drowsy or yawns, an alarm sound is played.
 
 ## Purpose
@@ -42,11 +41,12 @@ The code will start working in real-time as soon as the camera is opened.
 
 ### Main Loop
 As long as the camera is open, face detection is performed on each frame, and eye and mouth movements are monitored. If the eyes remain closed for a certain period or the mouth opens to a certain extent, an alert is triggered.
-
-#Eye Aspect Ratio (EAR) Formula
-The Eye Aspect Ratio (EAR) formula is used to determine the openness of the eyes by calculating the ratio of vertical distances to the horizontal distance of the eye. This ratio helps in detecting whether the eyes are open or closed, which is crucial for drowsiness detection.
+#### Eye Aspect Ratio (EAR) Formula
+The Eye Aspect Ratio (EAR) formula is used to calculate the openness of the eyes. This formula calculates the ratio of the vertical distances to the horizontal distance of the eye. By measuring the distances between different points of the eye, it determines whether the eyes are open or closed. If the EAR value is less than 0.2, the eyes are closed; otherwise, they are open.
 [](images.assest\EAR.png)
 [](images.assest\eye.png)
+
+
 ## Contributing
 If you want to contribute, please send a pull request or create an issue.
 
