@@ -43,6 +43,10 @@ The code will start working in real-time as soon as the camera is opened.
 ### Main Loop
 As long as the camera is open, face detection is performed on each frame, and eye and mouth movements are monitored. If the eyes remain closed for a certain period or the mouth opens to a certain extent, an alert is triggered.
 
+#Eye Aspect Ratio (EAR) Formula
+The Eye Aspect Ratio (EAR) formula is used to determine the openness of the eyes by calculating the ratio of vertical distances to the horizontal distance of the eye. This ratio helps in detecting whether the eyes are open or closed, which is crucial for drowsiness detection.
+[](images.assest\EAR.png)
+[](images.assest\eye.png)
 ## Contributing
 If you want to contribute, please send a pull request or create an issue.
 
